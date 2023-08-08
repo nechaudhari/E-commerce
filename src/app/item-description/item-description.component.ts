@@ -11,11 +11,12 @@ import { QuantityService } from '../quantity.service';
 export class ItemDescriptionComponent {
   items: any[] = [];
   quantity: number = 0;
-  
+  index:any;
   constructor(private http: HttpClient, private router: Router , private activeRoute:ActivatedRoute,private quantityService: QuantityService) {}
 
   ngOnInit() {
     this.loadItems();
+    
   }
 
   getDisplayedQuantity(): number {
@@ -34,12 +35,12 @@ export class ItemDescriptionComponent {
   updateQuantity(quantity:any,id:any){
     
     if (id !== -1) {
-     
+     this.index= this.items.findIndex(item => item.id === this.items[0].id);
       // Update the quantity of the item locally
       this.items[id].quantity = quantity;
       
       // Send a PUT request to update the item on the server
-      this.http.patch(` http://localhost:3000/items/${id+1}`,this.items[id]).subscribe(response => {
+      this.http.patch(` http://localhost:3000/items/${this.items[0].id}`,this.items[id]).subscribe(response => {
         console.log('Item updated successfully on the server:', response);
       });
     }

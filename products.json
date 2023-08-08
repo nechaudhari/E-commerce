@@ -3,10 +3,10 @@
     {
       "id": 1,
       "imageSrc": "./assets/images/clothes-2.jpg",
-      "itemName": "Women's Top",
+      "itemName": "Item 1",
       "itemCost": "$5.8",
-      "itemColor": "pink",
-      "quantity": 2
+      "itemColor": "brown",
+      "quantity": 4
     },
     {
       "id": 2,
@@ -14,14 +14,14 @@
       "itemName": "Men's Formal Shoe",
       "itemCost": "$5.8",
       "itemColor": "brown",
-      "quantity": 0
+      "quantity": 9
     },
     {
       "id": 3,
       "imageSrc": "./assets/images/shampoo.jpg",
       "itemName": "Old Spice Shampoo",
       "itemCost": "$5.8",
-      "quantity": 0
+      "quantity": 3
     },
     {
       "id": 4,
@@ -29,7 +29,7 @@
       "itemName": "Men's Leather Jacket",
       "itemCost": "$5.8",
       "itemColor": "brown",
-      "quantity": 0
+      "quantity": 2
     },
     {
       "id": 5,
@@ -44,21 +44,21 @@
       "imageSrc": "./assets/images/clothes-4.jpg",
       "itemName": "Item 6",
       "itemCost": "$5.8",
-      "quantity": 0
+      "quantity": 5
     },
     {
       "id": 7,
       "imageSrc": "./assets/images/party-wear-2.jpg",
       "itemName": "Item 7",
       "itemCost": "$5.8",
-      "quantity": 0
+      "quantity": 4
     },
     {
       "id": 8,
       "imageSrc": "./assets/images/watch-4.jpg",
       "itemName": "Item 8",
       "itemCost": "$5.8",
-      "quantity": 0
+      "quantity": 6
     },
     {
       "id": 9,
