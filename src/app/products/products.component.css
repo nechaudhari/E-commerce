@@ -1,0 +1,274 @@
+/* .container{
+    padding: 50px;
+    border: #f5f5f5 solid 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 50px;
+
+}
+
+  .head {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    border: white solid 1px;
+    width: 700px; 
+  }
+  
+  .grid-item {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  
+  .item {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .item h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #888;
+  }
+  @media (min-width: 1024px) {
+    .card {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .card {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .card {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+} */
+/* 
+.container {
+  padding: 50px;
+  border: #f5f5f5 solid 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 50px;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: grid;
+  gap: 20px;
+  width: 100%; 
+}
+
+.grid-item {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+.grid-item img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.item {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.item h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #888;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} */
+
+
+.container {
+  padding: 50px;
+  border: #f5f5f5 solid 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  border: none;
+}
+
+.grid-item {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.item {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.item h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #888;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* 
+,
+  {
+    "id": 5,
+    "imageSrc": "./assets/images/watch-2.jpg",
+    "itemName": "Item 5",
+    "itemCost": "$5.8"
+  },
+  {
+    "id": 6,
+    "imageSrc": "./assets/images/clothes-4.jpg",
+    "itemName": "Item 6",
+    "itemCost": "$5.8"
+  },
+  {
+    "id": 7,
+    "imageSrc": "./assets/images/party-wear-2.jpg",
+    "itemName": "Item 7",
+    "itemCost": "$5.8"
+  },
+  {
+    "id": 8,
+    "imageSrc": "./assets/images/watch-4.jpg",
+    "itemName": "Item 8",
+    "itemCost": "$5.8"
+  },
+  {
+    "id": 9,
+    "imageSrc": "./assets/images/shorts-2.jpg",
+    "itemName": "Item 9",
+    "itemCost": "$5.8"
+  },
+  {
+    "id": 10,
+    "imageSrc": "./assets/images/jacket-5.jpg",
+    "itemName": "Item 10",
+    "itemCost": "$5.8"
+  },
+  {
+    "id": 11,
+    "imageSrc": "./assets/images/shirt-2.jpg",
+    "itemName": "Item 11",
+    "itemCost": "$5.8"
+  },
+  {
+    "id": 12,
+    "imageSrc": "./assets/images/sports-4.jpg",
+    "itemName": "Item 12",
+    "itemCost": "$5.8"
+  },
+  {
+    "id": 13,
+    "imageSrc": "./assets/images/jacket-6.jpg",
+    "itemName": "Item 13",
+    "itemCost": "$5.8"
+  },
+  {
+    "id": 14,
+    "imageSrc": "./assets/images/shoe-1_1.jpg",
+    "itemName": "Item 14",
+    "itemCost": "$5.8"
+  } */

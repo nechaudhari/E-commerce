@@ -1,0 +1,12 @@
+<div class="container-fluid" style="margin-top: 100px;">
+    <!-- <h2 class="head">ShopWise</h2> -->
+    <div class="card">
+        <div class="grid-item" *ngFor="let item of items ; let i = index"  >
+          <img [src]="item.imageSrc" (dblclick)="redirectToDescription(item)">
+          <div class="item">
+            <h4><b>{{ item.itemName }}</b></h4>
+            <p>This item cost {{ item.itemCost }}</p>
+        </div>
+        <app-add [quantity] = "item.quantity" (inputnumberChange)="updateQuantity($event,i)"></app-add>
+      </div>
+</div>

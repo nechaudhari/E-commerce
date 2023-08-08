@@ -1,0 +1,106 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "imageSrc": "./assets/images/clothes-2.jpg",
+      "itemName": "Women's Top",
+      "itemCost": "$5.8",
+      "itemColor": "pink",
+      "quantity": 2
+    },
+    {
+      "id": 2,
+      "imageSrc": "./assets/images/shoe-1.jpg",
+      "itemName": "Men's Formal Shoe",
+      "itemCost": "$5.8",
+      "itemColor": "brown",
+      "quantity": 0
+    },
+    {
+      "id": 3,
+      "imageSrc": "./assets/images/shampoo.jpg",
+      "itemName": "Old Spice Shampoo",
+      "itemCost": "$5.8",
+      "quantity": 0
+    },
+    {
+      "id": 4,
+      "imageSrc": "./assets/images/jacket-2.jpg",
+      "itemName": "Men's Leather Jacket",
+      "itemCost": "$5.8",
+      "itemColor": "brown",
+      "quantity": 0
+    },
+    {
+      "id": 5,
+      "imageSrc": "./assets/images/watch-2.jpg",
+      "itemName": "Item 5",
+      "itemCost": "$5.8",
+      "itemColor": "black",
+      "quantity": 0
+    },
+    {
+      "id": 6,
+      "imageSrc": "./assets/images/clothes-4.jpg",
+      "itemName": "Item 6",
+      "itemCost": "$5.8",
+      "quantity": 0
+    },
+    {
+      "id": 7,
+      "imageSrc": "./assets/images/party-wear-2.jpg",
+      "itemName": "Item 7",
+      "itemCost": "$5.8",
+      "quantity": 0
+    },
+    {
+      "id": 8,
+      "imageSrc": "./assets/images/watch-4.jpg",
+      "itemName": "Item 8",
+      "itemCost": "$5.8",
+      "quantity": 0
+    },
+    {
+      "id": 9,
+      "imageSrc": "./assets/images/shorts-2.jpg",
+      "itemName": "Item 9",
+      "itemCost": "$5.8",
+      "quantity": 0
+    },
+    {
+      "id": 10,
+      "imageSrc": "./assets/images/jacket-5.jpg",
+      "itemName": "Item 10",
+      "itemCost": "$5.8",
+      "quantity": 0
+    },
+    {
+      "id": 11,
+      "imageSrc": "./assets/images/shirt-2.jpg",
+      "itemName": "Item 11",
+      "itemCost": "$5.8",
+      "quantity": 0
+    },
+    {
+      "id": 12,
+      "imageSrc": "./assets/images/sports-4.jpg",
+      "itemName": "Item 12",
+      "itemCost": "$5.8",
+      "quantity": 0
+    },
+    {
+      "id": 13,
+      "imageSrc": "./assets/images/jacket-6.jpg",
+      "itemName": "Item 13",
+      "itemCost": "$5.8",
+      "quantity": 0
+    },
+    {
+      "id": 14,
+      "imageSrc": "./assets/images/shoe-1_1.jpg",
+      "itemName": "Item 14",
+      "itemCost": "$5.8",
+      "quantity": 0
+    }
+  ]
+}

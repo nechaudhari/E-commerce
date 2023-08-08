@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="card">
+    <div class="grid-item" *ngFor="let item of items ; let i = index">
+      <div class="item-details" style="align-items: center; justify-content: center; text-align: center;">
+        <h4 style="text-align: center; font-size: 37px; justify-content: center; align-items: center; color: darkorange;">
+          <b>{{ item.itemName }}</b></h4>
+          <p>Color: {{ item.itemColor }}</p>
+          <p>This item costs {{ item.itemCost }}</p>
+        <app-add [quantity] = "item.quantity" (inputnumberChange)="updateQuantity($event,i)"></app-add>
+      </div>
+
+      <div class="item-image">
+        <img [src]="item.imageSrc">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "imageSrc": "./assets/images/clothes-2.jpg",
+    "itemName": "Item 1",
+    "itemCost": "$5.8",
+    "quantity":4
+  },
+  {
+    "id": 2,
+    "imageSrc": "./assets/images/shoe-1.jpg",
+    "itemName": "Item 2",
+    "itemCost": "$5.8",
+    "quantity":0
+  },
+  {
+    "id": 3,
+    "imageSrc": "./assets/images/shampoo.jpg",
+    "itemName": "Item 3",
+    "itemCost": "$5.8",
+    "quantity":5
+  },
+  {
+    "id": 4,
+    "imageSrc": "./assets/images/jacket-2.jpg",
+    "itemName": "Item 4",
+    "itemCost": "$5.8",
+    "quantity":0
+  }
+]
