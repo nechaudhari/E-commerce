@@ -17,7 +17,7 @@ export class ItemDescriptionComponent {
   constructor(private http: HttpClient, private router: Router , private activeRoute:ActivatedRoute,private quantityService: QuantityService) {}
 
   ngOnInit() {
-    this.loadItems();
+    this.loadItems(); 
   
     let productId = this.activeRoute.snapshot.paramMap.get('productId'); // Retrieve productId from route parameters
     let cartData = localStorage.getItem('localCart');
@@ -26,9 +26,7 @@ export class ItemDescriptionComponent {
       let items: any[] = JSON.parse(cartData);
       items = items.filter((item: any) => productId === item.id.toString());
       this.removeCart = items.length > 0;
-    } else {
-      this.removeCart = false;
-    }
+    } 
   }
   
 
@@ -57,11 +55,14 @@ export class ItemDescriptionComponent {
     }
     }
 
-    AddToCart() {
-      if (this.items && this.items.length > 0) {
+    AddToCart(ItemQuantity:number) {
+      if (this.items && this.items.length > 0 && ItemQuantity > 0) {
         this.items[0].pquantity = this.quantity; 
         this.quantityService.localAddToCart(this.items[0]); 
         this.removeCart = true;
+      }
+      else{
+        alert("Please add the quantity")
       }
     }
 

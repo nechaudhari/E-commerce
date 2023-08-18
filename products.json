@@ -28,7 +28,8 @@
       "itemName": "Old Spice Shampoo",
       "itemCost": "$5.8",
       "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
-      "quantity": 3
+      "quantity": 0,
+      "pquantity": 0
     },
     {
       "id": 4,
@@ -37,7 +38,8 @@
       "itemCost": "$5.8",
       "itemColor": "brown",
       "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
-      "quantity": 0
+      "quantity": 0,
+      "pquantity": 0
     },
     {
       "id": 5,

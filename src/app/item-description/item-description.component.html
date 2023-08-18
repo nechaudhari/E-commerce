@@ -13,8 +13,8 @@
           <p>This item costs {{ item.itemCost }}</p>
           <p><b> </b>{{ item.itemOffer }}</p>
         <app-add  [quantity] = "item.quantity" (inputnumberChange)="updateQuantity($event,i)"></app-add>
-          <button *ngIf = "!removeCart" class="form-button" (click)="AddToCart()">Add to Cart</button>
-          <button *ngIf = "removeCart" class="form-button" (click)="RemoveToCart(items[0])">Remove from Cart</button>
+          <button *ngIf = "!removeCart" class="form-button" (click)="AddToCart(item.quantity)">Add to Cart</button>
+          <button *ngIf = "removeCart" class="form-button" (click)="RemoveToCart(item.id)">Remove from Cart</button>
       </div>
       <div class="item-image">
         <img [src]="item.imageSrc" style="width: 300px;">
