@@ -10,6 +10,8 @@ import { ProductsComponent } from './products/products.component';
 import { AddComponent } from './add/add.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ItemDescriptionComponent } from './item-description/item-description.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -21,6 +23,8 @@ import { ItemDescriptionComponent } from './item-description/item-description.co
     AddComponent,
     NavbarComponent,
     ItemDescriptionComponent,
+    RegisterComponent,
+    LoginComponent,
    
     
   ],

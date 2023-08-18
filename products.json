@@ -3,24 +3,31 @@
     {
       "id": 1,
       "imageSrc": "./assets/images/clothes-2.jpg",
-      "itemName": "Item 1",
+      "itemName": "Women's Crop Top",
       "itemCost": "$5.8",
-      "itemColor": "brown",
-      "quantity": 4
+      "itemColor": "Color: pink",
+      "itemSize": "Size Available: XS, S, M, L, XL",
+      "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
+      "quantity": 0,
+      "pquantity": 0
     },
     {
       "id": 2,
       "imageSrc": "./assets/images/shoe-1.jpg",
       "itemName": "Men's Formal Shoe",
       "itemCost": "$5.8",
-      "itemColor": "brown",
-      "quantity": 9
+      "itemColor": "Color: brown",
+      "size": "Size Available: 6, 7, 8, 9, 10",
+      "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
+      "quantity": 0,
+      "pquantity": 0
     },
     {
       "id": 3,
       "imageSrc": "./assets/images/shampoo.jpg",
       "itemName": "Old Spice Shampoo",
       "itemCost": "$5.8",
+      "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
       "quantity": 3
     },
     {
@@ -29,7 +36,8 @@
       "itemName": "Men's Leather Jacket",
       "itemCost": "$5.8",
       "itemColor": "brown",
-      "quantity": 2
+      "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
+      "quantity": 0
     },
     {
       "id": 5,
@@ -44,21 +52,21 @@
       "imageSrc": "./assets/images/clothes-4.jpg",
       "itemName": "Item 6",
       "itemCost": "$5.8",
-      "quantity": 5
+      "quantity": 0
     },
     {
       "id": 7,
       "imageSrc": "./assets/images/party-wear-2.jpg",
       "itemName": "Item 7",
       "itemCost": "$5.8",
-      "quantity": 4
+      "quantity": 0
     },
     {
       "id": 8,
       "imageSrc": "./assets/images/watch-4.jpg",
       "itemName": "Item 8",
       "itemCost": "$5.8",
-      "quantity": 6
+      "quantity": 0
     },
     {
       "id": 9,
@@ -101,6 +109,32 @@
       "itemName": "Item 14",
       "itemCost": "$5.8",
       "quantity": 0
+    }
+  ],
+  "user": [
+    {
+      "name": "neha",
+      "email": "n@gmail.com",
+      "password": "n@123456",
+      "id": 1
+    },
+    {
+      "name": "tony",
+      "email": "t@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "ramu",
+      "email": "r@test.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 4
     }
   ]
 }

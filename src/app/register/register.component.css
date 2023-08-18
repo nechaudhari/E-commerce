@@ -1,0 +1,19 @@
+.register-auth{
+    border: blueviolet 1px solid;
+    display: flex;
+    margin: 50px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    color: blueviolet; 
+}
+
+.h2{
+    margin-bottom: 30px;
+}

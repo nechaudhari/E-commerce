@@ -1,18 +1,23 @@
-<app-navbar></app-navbar>
-
+<app-navbar class="nav">
+ 
+</app-navbar>
+<!-- <button class="back" [routerLink]="['/products']"><i class="fa-solid fa-arrow-left"></i></button> -->
 <div class="container">
   <div class="card">
     <div class="grid-item" *ngFor="let item of items ; let i = index">
-      <div class="item-details" style="align-items: center; justify-content: center; text-align: center;">
-        <h4 style="text-align: center; font-size: 37px; justify-content: center; align-items: center; color: darkorange;">
-          <b>{{ item.itemName }}</b></h4>
-          <p>Color: {{ item.itemColor }}</p>
+      <div class="item-details"  >
+        <h3 style="color: darkgoldenrod;">
+          <b>{{ item.itemName }}</b></h3>
+          <p>{{ item.itemColor }}</p>
+          <p>{{ item.itemSize }}</p>
           <p>This item costs {{ item.itemCost }}</p>
-        <app-add [quantity] = "item.quantity" (inputnumberChange)="updateQuantity($event,i)"></app-add>
+          <p><b> </b>{{ item.itemOffer }}</p>
+        <app-add  [quantity] = "item.quantity" (inputnumberChange)="updateQuantity($event,i)"></app-add>
+          <button *ngIf = "!removeCart" class="form-button" (click)="AddToCart()">Add to Cart</button>
+          <button *ngIf = "removeCart" class="form-button" (click)="RemoveToCart(items[0])">Remove from Cart</button>
       </div>
-
       <div class="item-image">
-        <img [src]="item.imageSrc">
+        <img [src]="item.imageSrc" style="width: 300px;">
       </div>
     </div>
   </div>
