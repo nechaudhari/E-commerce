@@ -1,80 +1,27 @@
-<!-- <div class="cart-page">
+<div class="cart-page">
     <h2>Welcome to my Cart</h2>
     <div class="row">
-        <div class="col sm-8 details">
-            <ul>
-                <li>
-                    <img src="./assets/images/clothes-2.jpg" alt="">
-                </li>
-                <li>
-                    <h5>Product name: hhhh</h5>
-                </li>
-                <li>
-                    <h6>price 700₹</h6>
-                </li>
-                <li>
-                    <span>quqntity: 8</span>
-                </li>
-                <li>
-                    <button class="form-button">remove from cart</button>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <img src="./assets/images/clothes-2.jpg" alt="">
-                </li>
-                <li>
-                    <h5>Product name: hhhh</h5>
-                </li>
-                <li>
-                    <h6>price 700₹</h6>
-                </li>
-                <li>
-                    <span>quqntity: 8</span>
-                </li>
-                <li>
-                    <button class="form-button">remove from cart</button>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <img src="./assets/images/clothes-2.jpg" alt="">
-                </li>
-                <li>
-                    <h5>Product name: hhhh</h5>
-                </li>
-                <li>
-                    <h6>price 700₹</h6>
-                </li>
-                <li>
-                    <span>quqntity: 8</span>
-                </li>
-                <li>
-                    <button class="form-button">remove from cart</button>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <img src="./assets/images/clothes-2.jpg" alt="">
-                </li>
-                <li>
-                    <h5>Product name: hhhh</h5>
-                </li>
-                <li>
-                    <h6>price 700₹</h6>
-                </li>
-                <li>
-                    <span>quqntity: 8</span>
-                </li>
-                <li>
-                    <button class="form-button">remove from cart</button>
-                </li>
-            </ul>
+        <div class="column w-75">
+            <div class="col sm-8 details" *ngFor="let product of products">
+                <ul>
+                    <li>
+                        <img src={{product.imageSrc}} alt="">
+                    </li>
+                    <li>
+                        <h5>Product name: {{ product.itemName }}</h5>
+                    </li>
+                    <li>
+                        <h6>price {{product.itemCost}}</h6>
+                    </li>
+                    <li>
+                        <span>quqntity: {{product.quantity}}</span>
+                    </li>
+                    <li>
+                        <button class="form-button">remove from cart</button>
+                    </li>
+                </ul>
+            </div>
         </div>
-
         <div class="col sm-4 summary">
             <h2>Summary</h2>
             <ul>
@@ -87,24 +34,11 @@
                 <li>
                     <span>Discount</span><span>30₹</span>
                 </li>
-                
                 <li>
-                    <h4><span>Total Amount</span></h4> <h4><span>320₹</span></h4>
+                    <h4><span>Total Amount</span></h4>
+                    <h4><span>320₹</span></h4>
                 </li>
             </ul>
         </div>
-        
     </div>
-</div> -->
-<div class="card m-3 h-auto">
-    <ul>
-        <li>hey</li>
-        
-        <div *ngFor="let product of mainProducts">
-          <h3>{{ product.itemName }}</h3>
-          <p>Price: ${{ product.itemCost }}</p>
-         </div>
-    </ul>
 </div>
-
-  

@@ -8,12 +8,7 @@ import { QuantityService } from '../quantity.service';
 })
 export class CartComponent {
  
-  mainProducts: any = (localStorage.getItem("localCart"));
-  ngOnInit(){
-   
-    // const productsJSON = localStorage.getItem('localCart');
-    // const products: any = productsJSON ? JSON.parse(productsJSON) : [];
-    // this.mainProducts.push(products);
-  }
-
+  productsJSON = localStorage.getItem('localCart');
+  products: any[] = this.productsJSON ? JSON.parse(this.productsJSON) : [];
+  
 }
