@@ -4,7 +4,7 @@
       "id": 1,
       "imageSrc": "./assets/images/clothes-2.jpg",
       "itemName": "Women's Crop Top",
-      "itemCost": "$5.8",
+      "itemCost": "700₹",
       "itemColor": "Color: pink",
       "itemSize": "Size Available: XS, S, M, L, XL",
       "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
@@ -28,7 +28,7 @@
       "itemName": "Old Spice Shampoo",
       "itemCost": "$5.8",
       "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
-      "quantity": 0,
+      "quantity": 1,
       "pquantity": 0
     },
     {
@@ -37,6 +37,7 @@
       "itemName": "Men's Leather Jacket",
       "itemCost": "$5.8",
       "itemColor": "brown",
+      "itemSize": "Size Available: XS, S, M, L, XL",
       "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
       "quantity": 0,
       "pquantity": 0
@@ -44,73 +45,94 @@
     {
       "id": 5,
       "imageSrc": "./assets/images/watch-2.jpg",
-      "itemName": "Item 5",
+      "itemName": "Watch",
       "itemCost": "$5.8",
       "itemColor": "black",
-      "quantity": 0
+      "quantity": 2,
+      "pquantity": 0
     },
     {
       "id": 6,
       "imageSrc": "./assets/images/clothes-4.jpg",
-      "itemName": "Item 6",
+      "itemName": "Women's Skirt",
       "itemCost": "$5.8",
-      "quantity": 0
+      "itemSize": "Size Available: XS, S, M, L, XL",
+      "quantity": 1,
+      "itemColor": "Color: black",
+      "pquantity": 0
     },
     {
       "id": 7,
       "imageSrc": "./assets/images/party-wear-2.jpg",
-      "itemName": "Item 7",
+      "itemName": "Women's Sandle",
       "itemCost": "$5.8",
-      "quantity": 0
+      "itemColor": "Color: brown",
+      "quantity": 0,
+      "pquantity": 0
     },
     {
       "id": 8,
       "imageSrc": "./assets/images/watch-4.jpg",
-      "itemName": "Item 8",
+      "itemName": "Watch",
       "itemCost": "$5.8",
-      "quantity": 0
+      "quantity": 0,
+      "pquantity": 0
     },
     {
       "id": 9,
       "imageSrc": "./assets/images/shorts-2.jpg",
-      "itemName": "Item 9",
+      "itemName": "Men's Shorts",
       "itemCost": "$5.8",
-      "quantity": 0
+      "itemSize": "Size Available: XS, S, M, L, XL",
+      "quantity": 0,
+      "itemColor": "Color: brown",
+      "pquantity": 0
     },
     {
       "id": 10,
       "imageSrc": "./assets/images/jacket-5.jpg",
-      "itemName": "Item 10",
+      "itemName": "Men's Jacket",
+      "itemSize": "Size Available: XS, S, M, L, XL",
       "itemCost": "$5.8",
-      "quantity": 0
+      "quantity": 0,
+      "itemColor": "Color: Blue",
+      "pquantity": 0
     },
     {
       "id": 11,
       "imageSrc": "./assets/images/shirt-2.jpg",
-      "itemName": "Item 11",
+      "itemName": "Men's Shirt",
+      "itemSize": "Size Available: XS, S, M, L, XL",
       "itemCost": "$5.8",
-      "quantity": 0
+      "itemColor": "Color: white",
+      "quantity": 2,
+      "pquantity": 0
     },
     {
       "id": 12,
       "imageSrc": "./assets/images/sports-4.jpg",
-      "itemName": "Item 12",
+      "itemName": "Men's Shoe",
       "itemCost": "$5.8",
-      "quantity": 0
+      "quantity": 0,
+      "pquantity": 0
     },
     {
       "id": 13,
       "imageSrc": "./assets/images/jacket-6.jpg",
-      "itemName": "Item 13",
+      "itemName": "Jacket",
       "itemCost": "$5.8",
-      "quantity": 0
+      "quantity": 0,
+      "itemColor": "Color: Brown",
+      "itemSize": "Size Available: XS, S, M, L, XL",
+      "pquantity": 0
     },
     {
       "id": 14,
       "imageSrc": "./assets/images/shoe-1_1.jpg",
-      "itemName": "Item 14",
+      "itemName": "Formal Shoe",
       "itemCost": "$5.8",
-      "quantity": 0
+      "quantity": 0,
+      "pquantity": 0
     }
   ],
   "user": [
@@ -137,6 +159,25 @@
       "email": "",
       "password": "",
       "id": 4
+    },
+    {
+      "name": "Neha Gopal Chaudhari",
+      "email": "neha.chaudhari@hitachivantara.com",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "Neha Chaudhari",
+      "email": "neha@gmail.com",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 7
     }
-  ]
+  ],
+  "cart": []
 }

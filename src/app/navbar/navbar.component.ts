@@ -10,13 +10,13 @@ export class NavbarComponent {
 
   cartItems = 0;
 
-  constructor(private productService: QuantityService) {
+  constructor(private quantityService: QuantityService) {
     let cartData = localStorage.getItem('localCart');
     if (cartData) {
       this.cartItems = JSON.parse(cartData)?.length || 0;
     }
 
-    this.productService.cartData.subscribe((items) => {
+    this.quantityService.cartData.subscribe((items) => {
       this.cartItems = items.length;
     });
   }

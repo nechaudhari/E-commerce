@@ -12,6 +12,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ItemDescriptionComponent } from './item-description/item-description.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { CartComponent } from './cart/cart.component';
+import { CartListComponent } from './cart-list/cart-list.component';
+
 
 
 
@@ -25,6 +28,8 @@ import { LoginComponent } from './login/login.component';
     ItemDescriptionComponent,
     RegisterComponent,
     LoginComponent,
+    CartComponent,
+    CartListComponent
    
     
   ],

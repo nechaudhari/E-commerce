@@ -55,11 +55,16 @@ export class ItemDescriptionComponent {
     }
     }
 
-    AddToCart(ItemQuantity:number) {
-      if (this.items && this.items.length > 0 && ItemQuantity > 0) {
+    AddToCart(item:any) {
+      if (this.items && this.items.length > 0 && item.quantity > 0) {
+        // let cartDataList = JSON.parse(localStorage.getItem('myArray') || '[]');
+        // cartDataList.push(item);
+
         this.items[0].pquantity = this.quantity; 
         this.quantityService.localAddToCart(this.items[0]); 
         this.removeCart = true;
+        
+
       }
       else{
         alert("Please add the quantity")

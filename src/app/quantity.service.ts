@@ -13,7 +13,6 @@ export class QuantityService {
   private quantity: number = 0;
   cartData = new EventEmitter<Product[] | []>();
  
-
   getQuantity(): number {
     return this.quantity;
   }
@@ -44,6 +43,12 @@ export class QuantityService {
       localStorage.setItem('localCart', JSON.stringify(items));
       this.cartData.emit(items);
     }
+  }
+
+  currentCart(){
+    let userStore = localStorage.getItem('user');
+    let userData = userStore && JSON.parse(userStore);
+    
   }
 
 }
