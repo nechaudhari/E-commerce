@@ -13,9 +13,6 @@ import { ItemDescriptionComponent } from './item-description/item-description.co
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
-import { CartListComponent } from './cart-list/cart-list.component';
-
-
 
 
 @NgModule({
@@ -28,8 +25,7 @@ import { CartListComponent } from './cart-list/cart-list.component';
     ItemDescriptionComponent,
     RegisterComponent,
     LoginComponent,
-    CartComponent,
-    CartListComponent
+    CartComponent
    
     
   ],

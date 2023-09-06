@@ -1,44 +1,51 @@
 <div class="cart-page">
     <h2>Welcome to my Cart</h2>
     <div class="row">
-        <div class="column w-75">
-            <div class="col sm-8 details" *ngFor="let product of products">
-                <ul>
-                    <li>
-                        <img src={{product.imageSrc}} alt="">
-                    </li>
-                    <li>
-                        <h5>Product name: {{ product.itemName }}</h5>
-                    </li>
-                    <li>
-                        <h6>price {{product.itemCost}}</h6>
-                    </li>
-                    <li>
-                        <span>quqntity: {{product.quantity}}</span>
-                    </li>
-                    <li>
-                        <button class="form-button">remove from cart</button>
-                    </li>
-                </ul>
-            </div>
+      <div class="column w-75">
+        <div class="col sm-8 details">
+          <table class="product-table">
+            <tr *ngFor="let product of products">
+              <td>
+                <img src={{product.imageSrc}} alt="">
+              </td>
+              <td>
+                <h5>Product name: {{ product.itemName }}</h5>
+              </td>
+              <td>
+                <h6>Price: {{ product.itemCost }}</h6>
+              </td>
+              <td>
+                <span>Quantity: {{ product.quantity }}</span>
+              </td>
+              <td>
+                <button class="form-button" (click)="RemoveToCart(product.id)">Remove from cart</button>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div class="col sm-4 summary">
-            <h2>Summary</h2>
-            <ul>
-                <li>
-                    <span>Amount</span><span>300₹</span>
-                </li>
-                <li>
-                    <span>Tax</span><span>50₹</span>
-                </li>
-                <li>
-                    <span>Discount</span><span>30₹</span>
-                </li>
-                <li>
-                    <h4><span>Total Amount</span></h4>
-                    <h4><span>320₹</span></h4>
-                </li>
-            </ul>
-        </div>
+      </div>
+      <div class="col sm-4 summary">
+        <h2>Summary</h2>
+        <table class="summary-table">
+          <tr>
+            <td><span>Amount</span></td>
+            <td><span>{{totalCost}}₹</span></td>
+          </tr>
+          <tr>
+            <td><span>Tax</span></td>
+            <td><span>50₹</span></td>
+          </tr>
+          <tr>
+            <td><span>Discount</span></td>
+            <td><span>30₹</span></td>
+          </tr>
+          <tr>
+            <td><h4>Total Amount</h4></td>
+            <td><h4>{{payable}}</h4></td>
+          </tr>
+        </table>
+      </div>
     </div>
-</div>
+  </div>
+
+  

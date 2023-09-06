@@ -6,7 +6,7 @@
           <img [src]="item.imageSrc" (dblclick)="redirectToDescription(item)">
           <div class="item">
             <h4><b>{{ item.itemName }}</b></h4>
-            <p>This item cost {{ item.itemCost }}</p>
+            <p>This item cost {{ item.itemCost }} ₹</p>
         </div>
         <app-add [quantity] = "item.quantity" (inputnumberChange)="updateQuantity($event,i)"></app-add>
       </div>

@@ -48,7 +48,6 @@ export class ItemDescriptionComponent {
     if (id !== -1) {
      this.index= this.items.findIndex(item => item.id === this.items[0].id);
       this.items[id].quantity = quantity;
-      
       this.http.patch(` http://localhost:3000/items/${this.items[0].id}`,this.items[id]).subscribe(response => {
         console.log('Item updated successfully on the server:', response);
       });

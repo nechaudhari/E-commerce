@@ -3,14 +3,14 @@
 </app-navbar>
 <!-- <button class="back" [routerLink]="['/products']"><i class="fa-solid fa-arrow-left"></i></button> -->
 <div class="container">
-  <div class="card">
+  <div>
     <div class="grid-item" *ngFor="let item of items ; let i = index">
       <div class="item-details"  >
         <h3 style="color: darkgoldenrod;">
           <b>{{ item.itemName }}</b></h3>
           <p>{{ item.itemColor }}</p>
           <p>{{ item.itemSize }}</p>
-          <p>This item costs {{ item.itemCost }}</p>
+          <p>This item costs {{ item.itemCost }} ₹</p>
           <p><b> </b>{{ item.itemOffer }}</p>
         <app-add  [quantity] = "item.quantity" (inputnumberChange)="updateQuantity($event,i)"></app-add>
           <button *ngIf = "!removeCart" class="form-button" (click)="AddToCart(item)">Add to Cart</button>

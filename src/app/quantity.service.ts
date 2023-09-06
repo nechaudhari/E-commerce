@@ -5,14 +5,14 @@ interface Product {
   name: string;
   price: number;
 }
-@Injectable({
-  providedIn: 'root'
-})
 
+@Injectable({
+  providedIn: 'root',
+})
 export class QuantityService {
   private quantity: number = 0;
-  cartData = new EventEmitter<Product[] | []>();
- 
+  cartData = new EventEmitter<Product[]>();
+
   getQuantity(): number {
     return this.quantity;
   }
@@ -21,34 +21,35 @@ export class QuantityService {
     this.quantity = newQuantity;
   }
 
-  localAddToCart(data: Product) { 
+  localAddToCart(data: Product) {
     let cartData = [];
     let localCart = localStorage.getItem('localCart');
     if (!localCart) {
       localStorage.setItem('localCart', JSON.stringify([data]));
-    }
-    else{
-     cartData= JSON.parse(localCart);
-     cartData.push(data)
-     localStorage.setItem('localCart', JSON.stringify(cartData));
+    } else {
+      cartData = JSON.parse(localCart);
+      cartData.push(data);
+      localStorage.setItem('localCart', JSON.stringify(cartData));
     }
     this.cartData.emit(cartData);
   }
 
-  removeItemFromCart(productId:number){
+  removeItemFromCart(productId: number) {
     let cartData = localStorage.getItem('localCart');
-    if(cartData){
-      let items:Product[]= JSON.parse(cartData);
-      items = items.filter((item:Product)=>productId!==item.id);
+    if (cartData) {
+      let items: Product[] = JSON.parse(cartData);
+      items = items.filter((item: Product) => productId !== item.id);
       localStorage.setItem('localCart', JSON.stringify(items));
       this.cartData.emit(items);
     }
   }
 
-  currentCart(){
-    let userStore = localStorage.getItem('user');
-    let userData = userStore && JSON.parse(userStore);
-    
+  // Add a method to retrieve the current cart
+  getCurrentCart(): Product[] | null {
+    let cartData = localStorage.getItem('localCart');
+    if (cartData) {
+      return JSON.parse(cartData);
+    }
+    return null;
   }
-
 }
