@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { QuantityService } from '../quantity.service';
+import { BehaviorSubject , Subject} from 'rxjs';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -9,12 +10,16 @@ import { QuantityService } from '../quantity.service';
 })
 export class ProductsComponent {
   items: any[] = [];
+  // private cartSubject = new BehaviorSubject<number[]>([]);
+  // getCartSubject = this.cartSubject.asObservable();
 
-  constructor(
-    private http: HttpClient,
-    private router: Router,
-    private quantityService: QuantityService
-  ) {}
+  
+
+
+  constructor(private http: HttpClient,private router: Router,private quantityService: QuantityService) {}
+
+ 
+  
 
   ngOnInit() {
     this.loadItems();
@@ -48,4 +53,11 @@ export class ProductsComponent {
         });
     }
   }
+
+  // addToCart(productQuantity: number){
+  //   const currentCart = this.cartSubject.value;
+  //   currentCart.push(productQuantity);
+  //   this.cartSubject.next(currentCart);
+  // }
+  
 }

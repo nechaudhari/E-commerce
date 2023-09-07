@@ -18,7 +18,6 @@ export class CartComponent implements OnInit{
 
   cost = this.products.map((item: any) => item.itemCost * item.quantity);
   totalCost = this.cost.reduce((total: any, cost: any) => total + cost, 0);
-
   payable = this.totalCost + 50 + 30;
 
   constructor(
@@ -27,17 +26,17 @@ export class CartComponent implements OnInit{
   ngOnInit() {
     this.quantityService.cartData.subscribe((cartData) => {
       this.products = cartData;
-      // this.calculateTotalCost();
+      this.products = this.quantityService.getCurrentCart() || [];
+      this.calculateTotalCost();
     });
-    // this.calculateTotalCost();
+    this.calculateTotalCost();
   }
 
-  // calculateTotalCost() {
-  //   this.totalCost = this.products.reduce(
-  //     (total: number, product: Product) => total + product.price,
-  //     0
-  //   );
-  // }
+  calculateTotalCost() {
+    this.totalCost = this.products.reduce(
+      (total: number, product: any) => total + product.price ,0
+    );
+  }
   
 
   RemoveToCart(ProductId: number) {
@@ -45,4 +44,6 @@ export class CartComponent implements OnInit{
     this.products = this.products.filter((item: any) => item.id !== ProductId);
     this.removeCart = false;
   }
+
+
 }

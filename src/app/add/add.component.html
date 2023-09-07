@@ -5,7 +5,7 @@
             <label for="inputnumber" class="mr-2" style="font-size: 18px;">Qut :</label>
             <button class="btn" (click)="minus()"><i class="fa fa-minus"></i></button>
             <input type="text" class="form-control mx-2" id="inputnumber" [(ngModel)]="inputnumber" style="width: 50px; display: flex; justify-content: center; align-items: center; text-align: center;">
-            <button class="btn" (click)="plus()"><i class="fa fa-plus"></i></button>
+            <button class="btn" (click)="plus(inputnumber)"><i class="fa fa-plus"></i></button>
           </div>
       </div>
   </div>

@@ -13,8 +13,9 @@ export class AddComponent implements OnInit {
   items: any[] = [];
   index: any;
   removeCart = false;
+  cartSubject: any;
 
-  constructor() {}
+  constructor(private quantityService: QuantityService) {}
 
   ngOnInit() {
     this.addToQuantity(this.quantity);
@@ -26,10 +27,11 @@ export class AddComponent implements OnInit {
     // this.quantityService.localAddToCart(/* pass your product data here */);
   }
 
-  plus() {
+  plus(data:any) {
     this.inputnumber++;
     this.inputnumberChange.emit(this.inputnumber);
     // this.quantityService.localAddToCart(/* pass your product data here */);
+    this.cartSubject.sendCart(data.value)
   }
 
   minus() {

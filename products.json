@@ -8,7 +8,7 @@
       "itemColor": "Color: pink",
       "itemSize": "Size Available: XS, S, M, L, XL",
       "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
-      "quantity": 4,
+      "quantity": 3,
       "pquantity": 0
     },
     {
@@ -19,7 +19,7 @@
       "itemColor": "Color: brown",
       "size": "Size Available: 6, 7, 8, 9, 10",
       "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
-      "quantity": 7,
+      "quantity": 3,
       "pquantity": 0
     },
     {
@@ -39,7 +39,7 @@
       "itemColor": "brown",
       "itemSize": "Size Available: XS, S, M, L, XL",
       "itemOffer": "Available Offers: 5% off on Axis Bank Credit Card",
-      "quantity": 0,
+      "quantity": 2,
       "pquantity": 0
     },
     {
@@ -105,7 +105,7 @@
       "itemSize": "Size Available: XS, S, M, L, XL",
       "itemCost": 450,
       "itemColor": "Color: white",
-      "quantity": 0,
+      "quantity": 1,
       "pquantity": 0
     },
     {
